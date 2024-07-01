@@ -1,0 +1,17 @@
+Options +FollowSymLinks -Indexes
+
+<IfModule rewrite_module>
+	RewriteEngine On
+	RewriteRule ^(backend|assets) - [END]
+	RewriteRule ^(.*)$ frontend/$1 [L,QSA]
+</IfModule>
+
+# prefix
+<FilesMatch "^(\.)">
+	Require all denied
+</FilesMatch>
+
+# suffix
+<Files ~ "(.lock|.git|.env|.env.default)$">
+	Require all denied
+</Files>

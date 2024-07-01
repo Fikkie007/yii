@@ -1,0 +1,39 @@
+{
+  "name": "jeemce/yii2-blank",
+  "description": "Yii 2 Advanced Project Template (Blank)",
+  "homepage": "http://www.yiiframework.com/",
+  "type": "project",
+  "license": "proprietary",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "secure-http": false,
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://rnd.jmc.co.id:9016/"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "yiisoft/yii2": "@dev",
+    "yiisoft/yii2-bootstrap5": "@dev",
+    "yiisoft/yii2-symfonymailer": "@dev",
+    "jeemce/yii2": "@dev",
+    "phpoffice/phpspreadsheet": "~2"
+  },
+  "require-dev": {
+    "yiisoft/yii2-gii": "@dev",
+    "yiisoft/yii2-debug": "@dev",
+    "yiisoft/yii2-faker": "@dev",
+    "symfony/var-dumper": "~5 || @stable"
+  }
+}
